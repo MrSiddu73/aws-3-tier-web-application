@@ -3,9 +3,9 @@
 ```markdown
 # Setup Instructions
 ```
-
-![Three-Tier Architecture.png]
-
+<p align="center">
+  <img src="docs/Three-Tier Architecture.png" width="650" alt="AWS 3 Tier Architecture Banner">
+</p>
 
 **make sure you use your S3 bucket to store code and copy to webservers**
 
