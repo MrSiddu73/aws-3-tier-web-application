@@ -1,3 +1,15 @@
+<p align="center">
+  <img src="docs/Three-Tier Architecture.png" width="650" alt="AWS 3 Tier Architecture Banner">
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/AWS-Cloud-orange?style=for-the-badge&logo=amazonwebservices" />
+  <img src="https://img.shields.io/badge/Architecture-3_Tier-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Compute-EC2-green?style=for-the-badge&logo=amazonec2" />
+  <img src="https://img.shields.io/badge/Database-Aurora-yellow?style=for-the-badge&logo=amazonrds" />
+  <img src="https://img.shields.io/badge/Networking-VPC-purple?style=for-the-badge" />
+</p>
+
 ## Three-Tier Web Architecture: Step-by-Step Process
 
 # Tier Architecture explanation
