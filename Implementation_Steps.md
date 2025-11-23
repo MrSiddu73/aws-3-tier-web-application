@@ -4,7 +4,7 @@
 # Setup Instructions
 ```
 
-![Three-Tier Architecture](https://avinash.s3.amazonaws.com/awsdoc.png)
+![Three-Tier Architecture]
 
 
 **make sure you use your S3 bucket to store code and copy to webservers**
@@ -13,7 +13,7 @@
 Download the code from the Git repository:
 
 ```bash
-git clone https://github.com/avizway1/aws_3tier_architecture.git
+git clone https://github.com/MrSiddu73/aws-3-tier-web-application.git
 ```
 
 ## App Server Setup: Launch an ec2 instance in APP subnet of Custom VPC
@@ -31,7 +31,7 @@ sudo yum install mysql -y
 Connect to the database and perform basic configuration: Replace below info with your DB information
 
 ```bash
-mysql -h mydb.cfpgnjehw330.ap-south-1.rds.amazonaws.com -u admin -p
+mysql -h mydatabase.cvgio4eqccbw.ap-south-1.rds.amazonaws.com -u admin -p
 ```
 
 In the MySQL shell, execute the following commands:
@@ -62,7 +62,7 @@ Update the `**application-code/app-tier/DbConfig.js**` file with your database c
 Install Node.js and PM2:
 
 ```bash
-curl -o- https://raw.githubusercontent.com/avizway1/aws_3tier_architecture/main/install.sh | bash
+curl -o- https://github.com/MrSiddu73/aws-3-tier-web-application/blob/main/install.sh | bash
 source ~/.bashrc
 
 nvm install 16
@@ -75,7 +75,7 @@ Download application code from S3 and start the application:
 
 ```bash
 cd ~/
-aws s3 cp s3://3tierproject-avinash/application-code/app-tier/ app-tier --recursive
+aws s3 cp s3://three-tier-project-by-siddu/application-code/app-tier/ app-tier --recursive
 
 cd ~/app-tier
 npm install
@@ -110,13 +110,13 @@ internal-app-alb-574972862.ap-south-1.elb.amazonaws.com
 Install Node.js and Nginx on the web tier:
 
 ```bash
-curl -o- https://raw.githubusercontent.com/avizway1/aws_3tier_architecture/main/install.sh | bash
+curl -o- https://github.com/MrSiddu73/aws-3-tier-web-application/blob/main/install.sh | bash
 source ~/.bashrc
 nvm install 16
 nvm use 16
 
 cd ~/
-aws s3 cp s3://3tierproject-avinash/application-code/web-tier/ web-tier --recursive
+aws s3 cp s3://three-tier-project-by-siddu/application-code/web-tier/ web-tier --recursive
 
 cd ~/web-tier
 npm install
@@ -132,7 +132,7 @@ cd /etc/nginx
 ls
 
 sudo rm nginx.conf
-sudo aws s3 cp s3://3tierproject-avinash/application-code/nginx.conf .
+sudo aws s3 cp s3://three-tier-project-by-siddu/application-code/nginx.conf .
 
 sudo service nginx restart
 
