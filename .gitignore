@@ -1,0 +1,31 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Lambda deployment packages
+*.zip
+
+# Virtual environments
+env/
+venv/
+.venv/
+ENV/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# IDE-specific
+.vscode/
+.idea/
+
+# Terraform / Cloud related (optional)
+.terraform/
+terraform.tfstate
+terraform.tfstate.backup
+
+# Node (if UI used later)
+node_modules/
