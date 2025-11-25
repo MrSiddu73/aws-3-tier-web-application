@@ -105,3 +105,27 @@ In this architecture, we have three main layers:
 
 ### Summary
 This architecture ensures high availability, scalability, and reliability by distributing the load, monitoring instance health, and scaling resources dynamically. The web tier serves the front-end and routes API calls, the application tier handles business logic and interacts with the database, and the database tier provides robust data storage and retrieval.
+
+
+📦 AWS 3-Tier Architecture — Production-Style Deployment
+
+This release contains:
+- PPT Presentation
+- Architecture Diagram
+- Source Code
+- Setup Commands & Walkthrough
+- Screenshots & Test Results
+- Video Explanation Script
+
+🔍 Highlights:
+- VPC Design (Public + Private)
+- External and Internal Load Balancers
+- EC2 (Web + App Layer)
+- Secure RDS MariaDB Data Layer
+- IAM Roles + S3 Integration
+
+Future Extensions:
+- Route 53 Custom Domain + SSL
+- Auto Scaling
+- CI/CD Pipeline
+
